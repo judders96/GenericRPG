@@ -117,6 +117,7 @@ characterInfo newGame(characterInfo playerInit) {
     slowPrint("Please choose a race: ");
     cin>>player.playerRace.raceId;
     
+    test change
     
     return playerInit;
     
