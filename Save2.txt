@@ -1,9 +1,0 @@
-name: 200health
-
-revives: 3
-
-totalHealth: 200
-totalMana: 200
-
-damage: 20
-gold: 50
