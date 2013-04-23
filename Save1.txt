@@ -1,0 +1,9 @@
+name: 100health
+
+revives: 3
+
+totalHealth: 100
+totalMana: 100
+
+damage: 20
+gold: 50
