@@ -9,7 +9,7 @@ void slowPrint(string text) {
     for(int i = 0; i < arrSize; i++) {
         
         cout<<text[i];
-        Sleep(75);
+        Sleep(50);
         
     }
     

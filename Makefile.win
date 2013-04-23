@@ -5,8 +5,8 @@ CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = main.o battle.o characterInit.o cursorPos.o setColour.o playerData.o playing.o enemyInit.o playGame.o inventory.o inventoryDisplay.o inventoryDisplayHealth.o inventoryDisplayMana.o inventoryDisplaySlots.o inventoryDisplayArmor.o inventoryDisplayBackpack.o updateItems.o itemList.o battleDisplay.o raceList.o slowPrint.o deductMana.o deductHealth.o $(RES)
-LINKOBJ  = main.o battle.o characterInit.o cursorPos.o setColour.o playerData.o playing.o enemyInit.o playGame.o inventory.o inventoryDisplay.o inventoryDisplayHealth.o inventoryDisplayMana.o inventoryDisplaySlots.o inventoryDisplayArmor.o inventoryDisplayBackpack.o updateItems.o itemList.o battleDisplay.o raceList.o slowPrint.o deductMana.o deductHealth.o $(RES)
+OBJ  = main.o battle.o characterInit.o cursorPos.o setColour.o playerData.o playing.o enemyInit.o playGame.o inventory.o inventoryDisplay.o inventoryDisplayHealth.o inventoryDisplayMana.o inventoryDisplaySlots.o inventoryDisplayArmor.o inventoryDisplayBackpack.o updateItems.o itemList.o battleDisplay.o raceList.o slowPrint.o deductMana.o deductHealth.o updateRace.o $(RES)
+LINKOBJ  = main.o battle.o characterInit.o cursorPos.o setColour.o playerData.o playing.o enemyInit.o playGame.o inventory.o inventoryDisplay.o inventoryDisplayHealth.o inventoryDisplayMana.o inventoryDisplaySlots.o inventoryDisplayArmor.o inventoryDisplayBackpack.o updateItems.o itemList.o battleDisplay.o raceList.o slowPrint.o deductMana.o deductHealth.o updateRace.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
@@ -94,3 +94,6 @@ deductMana.o: deductMana.cpp
 
 deductHealth.o: deductHealth.cpp
 	$(CPP) -c deductHealth.cpp -o deductHealth.o $(CXXFLAGS)
+
+updateRace.o: updateRace.cpp
+	$(CPP) -c updateRace.cpp -o updateRace.o $(CXXFLAGS)

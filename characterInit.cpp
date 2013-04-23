@@ -89,7 +89,7 @@ characterInfo newGame(characterInfo playerInit) {
     
     //
     
-    string menu;
+    string nameCorrect;
     
     playerInit.revivesLeft = 3;
     playerInit.totalHealth = 100;
@@ -100,12 +100,12 @@ characterInfo newGame(characterInfo playerInit) {
     playerInit.gold = 50;
     
     do {
-        slowPrint("Please enter your name, Traveller");
+        slowPrint("Please enter your name, Traveller: ");
         cin>>playerInit.name;
-        cout<<playerInit.name<< ", this is your name(y/n)?";
-        cin>>menu;
+        slowPrint("Your name is, " + playerInit.name + ", correct(y/n)? ");
+        cin>>nameCorrect;
         system("cls");
-    } while(menu != "y");
+    } while(nameCorrect != "y");
     
     slowPrint("Welcome, to the world of Genericia, " + playerInit.name);
     cout<<endl;
@@ -116,6 +116,8 @@ characterInfo newGame(characterInfo playerInit) {
     cout<< "(5)Constructiod" <<endl;
     slowPrint("Please choose a race: ");
     cin>>playerInit.playerRace.raceId;
+    
+    playerInit = updateRace(playerInit);
     
     return playerInit;
     

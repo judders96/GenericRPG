@@ -121,6 +121,9 @@ void playerData(characterInfo player);
 
 characterInfo newGame(characterInfo playerInit);
 characterInfo characterInit(int newLoad);
+characterInfo updateRace(characterInfo player);
+race raceList(int raceId);
+
 enemyInfo enemyInit();
 
 //
@@ -131,7 +134,6 @@ item itemList(int slotId);
 characterInfo inventory(characterInfo player);
 
 void inventoryDisplay(characterInfo player);
-
 void inventoryDisplayHealth(characterInfo player);
 void inventoryDisplayMana(characterInfo player);
 void inventoryDisplaySlots(characterInfo player);
