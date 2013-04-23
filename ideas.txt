@@ -1,17 +1,11 @@
 
-When a new game is started, choose race / class
-Names
-New game / load game / save game
 Possible map with customizeable tiles / building stuff (DF style)
 Shop ownership, orders(time limit), income
-Item ID's
 Mob ID's (see directly above)
 Random weather
-Able to type "help" at any time
 Enemies level +1 or -1 your level
 Chests for storing loot, saved to character
 Enchanting - reagents e.g. fire salt for fire enchant
-Gold coins
 Town with shops, houses to buy, services - enchanter, blacksmith
 Buy your own house to sleep in, store stuff, live etc.
 Shop, buy weps / armour / misc, sell weps / armour / misc
@@ -35,4 +29,5 @@ Special events on certain days e.g. day 365 new year celebration
 Find / buy scrolls to learn new spells and abilities
 Passive abilities
 Day and night, different monsters depending on the time
-Death penalty, currently unknown, loss of gold?
+
+"Hispanics"
