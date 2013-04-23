@@ -35,8 +35,7 @@ void playGame(characterInfo player) {
                 system("cls");
                 break;
             case 4:
-                cout<< "Saving..." <<endl;
-                Sleep(500);
+                saveGame(player);
                 system("cls");
                 break;
             default:
