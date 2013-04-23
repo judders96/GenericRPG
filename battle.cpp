@@ -40,8 +40,8 @@ characterInfo battle(characterInfo player) {
     
         cout<< "|Battle!" <<endl<<"|";
         
-        player.health = deductPlayerHealth(player, enemy.baseDamage);
-        enemy.health = deductEnemyHealth(enemy, player.baseDamage);
+        player.health = deductHealth(player.health, enemy.baseDamage);
+        enemy.health = deductHealth(enemy.health, player.baseDamage);
         
         system("pause");
         

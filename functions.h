@@ -148,13 +148,7 @@ void battleDisplayPlayerMana(characterInfo player);
 void battleDisplayEnemyHealth(enemyInfo enemy);
 void battleDisplayEnemyMana(enemyInfo enemy);
 
-int deductPlayerHealth(characterInfo player, int damage);
-int deductPlayerMana(characterInfo player, int mana);
-int deductEnemyHealth(enemyInfo enemy, int damage);
-int deductEnemyMana(enemyInfo enemy, int mana);
-int increasePlayerHealth(characterInfo player, int health);
-int increasePlayerMana(characterInfo player, int mana);
-int increaseEnemyHealth(enemyInfo enemy, int health);
-int increaseEnemyMana(enemyInfo enemy, int mana);
+int deductHealth(int health, int damage);
+int deductMana(int mana, int manaUsed);
 
 //
