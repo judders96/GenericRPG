@@ -115,7 +115,7 @@ characterInfo newGame(characterInfo playerInit) {
     cout<< "(4)Reptilian" <<endl;
     cout<< "(5)Constructiod" <<endl;
     slowPrint("Please choose a race: ");
-    cin>>player.playerRace.raceId;
+    cin>>playerInit.playerRace.raceId;
     
     return playerInit;
     

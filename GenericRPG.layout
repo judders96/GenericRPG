@@ -13,7 +13,7 @@ LeftChar=1
 Open=1
 Top=0
 [Editors]
-Focused=20
+Focused=3
 Order=19,2,3,1,20
 [Editor_0]
 Open=0
@@ -24,10 +24,10 @@ TopLine=1
 LeftChar=1
 [Editor_3]
 Open=1
-Top=0
-CursorCol=5
-CursorRow=81
-TopLine=70
+Top=1
+CursorCol=20
+CursorRow=118
+TopLine=73
 LeftChar=1
 [Editor_4]
 Open=0
@@ -143,9 +143,9 @@ Open=0
 Top=0
 [Editor_20]
 Open=1
-Top=1
-CursorCol=5
-CursorRow=190
+Top=0
+CursorCol=33
+CursorRow=197
 TopLine=183
 LeftChar=1
 [Editor_24]
