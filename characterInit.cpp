@@ -19,26 +19,27 @@ characterInfo characterInit(int newLoad) {
             break;
         case 2:
             int fileSelect;
+            string name;
             
             inFile.open("Save1.txt");
             cout<< "Save 1: ";
             inFile.ignore(256, ' ');
-            inFile>>playerInit.name;
-            cout<<playerInit.name<<endl;
+            inFile>>name;
+            cout<<name<<endl;
             inFile.close();
             
             inFile.open("Save2.txt");
             cout<< "Save 2: ";
             inFile.ignore(256, ' ');
-            inFile>>playerInit.name;
-            cout<<playerInit.name<<endl;
+            inFile>>name;
+            cout<<name<<endl;
             inFile.close();
             
             inFile.open("Save3.txt");
             cout<< "Save 3: ";
             inFile.ignore(256, ' ');
-            inFile>>playerInit.name;
-            cout<<playerInit.name<<endl;
+            inFile>>name;
+            cout<<name<<endl;
             inFile.close();
             
             cout<< "Which save file would you like to choose? " <<endl;
