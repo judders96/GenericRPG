@@ -91,6 +91,8 @@ characterInfo newGame(characterInfo playerInit) {
     //
     
     string nameCorrect;
+    string raceCorrect;
+    race chooseARace;
     
     playerInit.revivesLeft = 3;
     playerInit.totalHealth = 100;
@@ -110,13 +112,24 @@ characterInfo newGame(characterInfo playerInit) {
     
     slowPrint("Welcome, to the world of Genericia, " + playerInit.name);
     cout<<endl;
-    cout<< "(1)Human" <<endl;
-    cout<< "(2)Orc" <<endl;
-    cout<< "(3)Arcanian" <<endl;
-    cout<< "(4)Reptilian" <<endl;
-    cout<< "(5)Constructiod" <<endl;
-    slowPrint("Please choose a race: ");
-    cin>>playerInit.playerRace.raceId;
+    do {
+        chooseARace = raceList(1);
+        cout<< "(1)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
+        chooseARace = raceList(2);
+        cout<< "(2)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
+        chooseARace = raceList(3);
+        cout<< "(3)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
+        chooseARace = raceList(4);
+        cout<< "(4)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
+        chooseARace = raceList(5);
+        cout<< "(5)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
+        slowPrint("Please choose a race: ");
+        cin>>playerInit.playerRace.raceId;
+        playerInit = updateRace(playerInit);
+        slowPrint("You are of the " + playerInit.playerRace.name + "s, correct(y/n)? ");
+        cin>>raceCorrect;
+        system("cls");
+    } while(raceCorrect != "y");
     
     playerInit = updateRace(playerInit);
     
