@@ -1,6 +1,6 @@
 #include "functions.h"
 
-bool playing() {
+bool mainMenu() {
     
     characterInfo player;
     
