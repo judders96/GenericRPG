@@ -109,18 +109,19 @@ struct enemyInfo {
 
 void playGame(characterInfo player);
 
-bool playing();
+bool mainMenu();
 
 void cursorPos(int x, int y);
 void setColour(int background, int text);
 void slowPrint(string text);
 
-void playerData(characterInfo player);
-
 //
 
 characterInfo newGame(characterInfo playerInit);
 characterInfo characterInit(int newLoad);
+void saveGame(characterInfo player);
+void writeToFile(characterInfo player, int fileSelect);
+
 characterInfo updateRace(characterInfo player);
 race raceList(int raceId);
 
