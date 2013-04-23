@@ -4,7 +4,7 @@ int main() {
     
     //
     
-    while(playing()) {}
+    while(mainMenu()) {}
     
     cout<< "Exiting..." <<endl;
     Sleep(1000);
