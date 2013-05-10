@@ -25,8 +25,8 @@ race raceList(int raceId) {
             updatedRace.healthRegen = false;
             updatedRace.manaRegen = false;
             updatedRace.autoRes = false;
-            updatedRace.damageBonus = 2;
-            updatedRace.magicDamageBonus = -1;
+            updatedRace.damageBonus = 10;
+            updatedRace.magicDamageBonus = -5;
             updatedRace.healthBonus = 20;
             updatedRace.manaBonus = 0;
             updatedRace.dodgeBonus = -5;
@@ -37,8 +37,8 @@ race raceList(int raceId) {
             updatedRace.healthRegen = false;
             updatedRace.manaRegen = true;
             updatedRace.autoRes = false;
-            updatedRace.damageBonus = -1;
-            updatedRace.magicDamageBonus = 2;
+            updatedRace.damageBonus = -5;
+            updatedRace.magicDamageBonus = 10;
             updatedRace.healthBonus = 0;
             updatedRace.manaBonus = 20;
             updatedRace.dodgeBonus = 0;
@@ -57,7 +57,7 @@ race raceList(int raceId) {
             break;
         case 5:
             updatedRace.name = "Constructiod";
-            updatedRace.description = "An automaton race, whose origin is unknown";
+            updatedRace.description = "An automatonic race, whose origin is unknown";
             updatedRace.healthRegen = true;
             updatedRace.manaRegen = true;
             updatedRace.autoRes = true;

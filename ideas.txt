@@ -31,3 +31,5 @@ Passive abilities
 Day and night, different monsters depending on the time
 
 "Hispanics"
+
+Alchemy and transmutation

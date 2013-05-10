@@ -123,10 +123,56 @@ characterInfo newGame(characterInfo playerInit) {
         cout<< "(4)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
         chooseARace = raceList(5);
         cout<< "(5)" <<chooseARace.name<< " - " <<chooseARace.description<<endl;
-        slowPrint("Please choose a race: ");
+        slowPrint("Please choose a race to view its details: ");
         cin>>playerInit.playerRace.raceId;
         playerInit = updateRace(playerInit);
-        slowPrint("You are of the " + playerInit.playerRace.name + "s, correct(y/n)? ");
+        switch(playerInit.playerRace.raceId) {
+            case 1:
+                cout<< "Human                                                   " <<endl;
+                cout<< "A basic race, reccomended for begginers                 " <<endl; 
+                cout<< "Attributes:                                             " <<endl;
+                cout<< "  -Small health bonus           : +10 base health       " <<endl;
+                cout<< "  -Small mana bonus             : +10 base mana         " <<endl;
+                break;
+            case 2:
+                cout<< "Orc                                                     " <<endl;
+                cout<< "A ruthless and bloodthirsty race                        " <<endl;
+                cout<< "Attributes:                                             " <<endl;
+                cout<< "  -Medium damage bonus          : +10% base damage      " <<endl;
+                cout<< "  -Medium health bonus          : +20 base health       " <<endl;
+                cout<< "  -Medium magic damage reduction: -5% base magic damage " <<endl;
+                cout<< "  -Medium dodge skill reduction : -5% base dodge skill  " <<endl;
+                break;
+            case 3:
+                cout<< "Arcanian                                                " <<endl;
+                cout<< "An arcane and magically attuned race                    " <<endl;
+                cout<< "Attributes:                                             " <<endl;
+                cout<< " -Increased mana regeneration   : +10% mana regeneration" <<endl;
+                cout<< " -Medium mana bonus             : +20 base mana         " <<endl;
+                cout<< " -Medium magic damage increase  : +10% base magic damage" <<endl;
+                cout<< " -Medium damage reduction       : -5% base damage       " <<endl;
+                break;
+            case 4:
+                cout<< "Reptillian                                              " <<endl;
+                cout<< "A devious and rougish race                              " <<endl;
+                cout<< "Attributes:                                             " <<endl;
+                cout<< " -Health regeneration           : +2 health every turn  " <<endl;
+                cout<< " -Large dodge skill increase    : +10 dodge skill       " <<endl;
+                break;
+            case 5:
+                updatedRace.name = "Constructiod";
+                updatedRace.description = "An automatonic race, whose origin is unknown";
+                updatedRace.healthRegen = true;
+                updatedRace.manaRegen = true;
+                updatedRace.autoRes = true;
+                updatedRace.damageBonus = 0;
+                updatedRace.magicDamageBonus = 0;
+                updatedRace.healthBonus = 0;
+                updatedRace.manaBonus = 0;
+                updatedRace.dodgeBonus = 0;
+                break;*/
+        }
+        slowPrint("Do you wish to be a " + playerInit.playerRace.name + "(y/n)? ");
         cin>>raceCorrect;
         system("cls");
     } while(raceCorrect != "y");
